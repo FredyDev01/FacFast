@@ -13,12 +13,13 @@ public final class FormFact extends javax.swing.JFrame {
     public static DefaultTableModel modelo;
     RenderTable render = new RenderTable();
     
+    
     public FormFact() {
         initComponents();
         setIconImage(PrgFact.iconWindow());
         this.setLocationRelativeTo(this);
         this.setTitle("FacFast - Inicio");
-        PrgFact.loadImages(IconHeader, "src/Images/IconHeader.png");
+        PrgFact.loadImages(IconHeader, "Imagenes/iconheader.png");
         InitTabla();
     }
     

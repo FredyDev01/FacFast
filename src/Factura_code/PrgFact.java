@@ -11,15 +11,15 @@ public class PrgFact {
     public static FormFact F1 = new FormFact();
     public static FormPro F2 = new FormPro();    
     public static void loadImages(JLabel ctn, String image){
-        ImageIcon imagen = new ImageIcon(image);
-        Icon icono = new ImageIcon(imagen.getImage().getScaledInstance(ctn.getWidth(), ctn.getHeight(), Image.SCALE_DEFAULT));
-        ctn.setIcon(icono);
+            ImageIcon imagen = new ImageIcon(ClassLoader.getSystemResource(image));        
+            Icon icono = new ImageIcon(imagen.getImage().getScaledInstance(ctn.getWidth(), ctn.getHeight(), Image.SCALE_DEFAULT));
+            ctn.setIcon(icono);
     }
     public static Image iconWindow(){
-        Image icon = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("Images/IconWindow.png"));
+        Image icon = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("Imagenes/iconwindow.png"));
         return icon;
-    }
-            
+    }  
+    
     public static void main(String[] args) {
         F1.setVisible(true);
     }

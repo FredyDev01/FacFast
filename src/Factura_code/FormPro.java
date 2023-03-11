@@ -9,10 +9,10 @@ public final class FormPro extends javax.swing.JFrame {
         setIconImage(PrgFact.iconWindow());
         this.setLocationRelativeTo(this);
         this.setTitle("FacFast - Registro");
-        PrgFact.loadImages(IconHeaderAdd, "src/Images/IconHeader2.png");
+        PrgFact.loadImages(IconHeaderAdd, "Imagenes/iconheader2.png");
     }
 
-    
+
     public void ResetForm(){
         txtDescrip.setText("");
         txtPrecio.setText("");
@@ -163,6 +163,7 @@ public final class FormPro extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         this.setVisible(false);
         ResetForm();
@@ -202,6 +203,7 @@ public final class FormPro extends javax.swing.JFrame {
         });
     }
 
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel IconHeaderAdd;
     private javax.swing.JButton jButton1;
